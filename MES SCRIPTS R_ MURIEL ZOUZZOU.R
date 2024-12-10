@@ -1,5 +1,6 @@
-# #####################################  TD1
 
+TD1
+---
 # Exercice1 - les objets et les vecteurs
 
 a=10
@@ -110,7 +111,7 @@ ls()  # affiche tous les objets crées
 
 rm(list = ls())  # supprime tous les objets 
 
-
+---
 # EXERCICE 3- FONCTIONS STATISTIQUE UNIVARIES ET SIMULATION 
 
 # PREMIERE PARTIE - Les fonctions runif(), mean(), median(), min(), max()
@@ -236,7 +237,7 @@ print("Oui, d'après la loi des grands nombres,
 
 
 
-
+---
 
 
 ######### TP1
@@ -383,11 +384,9 @@ write.table(x = dfConcat, file = ".../.../.../ExportTp1.csv",
 
 
 
+---
 
-
-
-
-# ####################################  TD2
+ TD2
 
 
 
@@ -664,9 +663,9 @@ topBody = subset(x = bodies
                  
               
                  
+ ---                
                  
-                 
-# TP2
+TP2
                  
                  
                  
@@ -762,8 +761,8 @@ topBody = subset(x = bodies
                  
                  
                  
-                    
-############################ TD3
+---                    
+TD3
 
                  
                  
@@ -997,7 +996,7 @@ topBody = subset(x = bodies
 ###### TP 3 = TP noté (examen)         
                  
 
-
+---
 ############################TD4
                  
                  
@@ -1096,7 +1095,7 @@ topBody = subset(x = bodies
                  print(means)
                  # Ajouter les moyennes de chaque groupe au graphique
                  points(means, col = "red", pch = 19)
-                 
+---                 
                  # Exercice 4 - Le diagramme
                  # Les fonctions barplot() et table()
                  
@@ -1280,7 +1279,7 @@ topBody = subset(x = bodies
                  
                  
                  
-                 
+---                 
                  
                  
 ############# TP4
@@ -1462,7 +1461,7 @@ topBody = subset(x = bodies
                    # Passage à la colonne suivante
                    indice_colonne <- indice_colonne + 1
                  }
-                 
+---               
                  # Exercice 3 - GOAT : Cas pratiques
                  
                  # Boucle pour demander 5 fois un nombre à l'utilisateur
@@ -1553,7 +1552,7 @@ topBody = subset(x = bodies
                  # Appel de la fonction juste_prix pour commencer le jeu
                  juste_prix()
                  
-                 
+---
                  
                  ##### EXPLICATION DETAILLE DE CHAQUE LIGNE DE CODE 
                  
@@ -1662,7 +1661,7 @@ topBody = subset(x = bodies
                  
                  
                  
-                 
+  ---               
                  
 #############" TD5
 
@@ -1791,7 +1790,7 @@ length(pop200) / length(population)
 
 #en théorie
 pnorm(q = 200, mean=moyenne_pop, sd=sd_pop)*1e7
-
+---
 # Exercice 4 - Simulation d'échantillon
 
 echantillon=sample(population,
@@ -1841,7 +1840,7 @@ proba_inf_172 = pnorm(q = 172,
 1 - proba_inf_172
 
 
-
+---
 
 #########  TP 5
 
@@ -1894,7 +1893,7 @@ for (fichier in fichiers) {
   execution_time <- end_time - start_time
   cat("Importation : ",nom_objet, "=" , execution_time , "\n")
 }
-
+---
 # Exercice 2: LES JOINTURES
 
 df_x = subset(team, city == "Los Angeles", select = c("id", "city"))
@@ -1940,12 +1939,12 @@ mydb <- dbConnect(SQLite(), "nba.sqlite")
 
 
 
-
+---
 
 ~#  ############### TD6
   
   
-  
+ --- 
   
   
   ## exercice 1
@@ -1963,7 +1962,7 @@ df$PERIOD =as.factor(df$PERIOD)
 df$PTS_TYPE= as.factor(df$PTS_TYPE)
 df$SHOOTER = as.factor(df$SHOOTER)
 
-
+---
 #EXERCICE 2
 
 help(len)
@@ -2012,7 +2011,7 @@ df$GAME_RESULT <- NULL
 #création d'un objet sans la première colonne GAME_ID
 df2 <- df[ , -1 ]
 
-
+---
 
 #EXERCICE 3
 
@@ -2040,7 +2039,7 @@ df_top5 <-  df_total_tri[5, ]
 
 
 
-
+---
 # EXERCICE 4
 
 
@@ -2074,8 +2073,3 @@ for (colonne in colnames(df)) {
 #Vous devriez plutôt utiliser is.factor().
 #Vous avez une faute de frappe dans la boucle for. Vous avez écrit colone au lieu de colonne.
 #Vous devez également déclarer le data frame df.
-
-
-
-
-# TP6= EXAMEN 
